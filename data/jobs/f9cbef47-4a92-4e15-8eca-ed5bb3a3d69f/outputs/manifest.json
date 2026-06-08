@@ -1,0 +1,73 @@
+{
+  "outputs": [
+    {
+      "name": "Backworking Sheets",
+      "rows": 0,
+      "filePath": "D:\\optitax\\optitax\\data\\jobs\\f9cbef47-4a92-4e15-8eca-ed5bb3a3d69f\\outputs\\Backworking Sheets.xlsx",
+      "type": "back"
+    },
+    {
+      "name": "bom-working-file",
+      "rows": 0,
+      "filePath": "D:\\optitax\\optitax\\data\\jobs\\f9cbef47-4a92-4e15-8eca-ed5bb3a3d69f\\outputs\\bom-working-file.xlsx",
+      "type": "back"
+    },
+    {
+      "name": "Data for DBK Main",
+      "rows": 0,
+      "filePath": "D:\\optitax\\optitax\\data\\jobs\\f9cbef47-4a92-4e15-8eca-ed5bb3a3d69f\\outputs\\Data for DBK Main.xlsx",
+      "type": "back"
+    },
+    {
+      "name": "Data for DBK",
+      "rows": 0,
+      "filePath": "D:\\optitax\\optitax\\data\\jobs\\f9cbef47-4a92-4e15-8eca-ed5bb3a3d69f\\outputs\\Data for DBK.xlsx",
+      "type": "back"
+    },
+    {
+      "name": "DBK Working Sheet",
+      "rows": 0,
+      "filePath": "D:\\optitax\\optitax\\data\\jobs\\f9cbef47-4a92-4e15-8eca-ed5bb3a3d69f\\outputs\\DBK Working Sheet.xlsx",
+      "type": "main"
+    },
+    {
+      "name": "export-statement-Main",
+      "rows": 0,
+      "filePath": "D:\\optitax\\optitax\\data\\jobs\\f9cbef47-4a92-4e15-8eca-ed5bb3a3d69f\\outputs\\export-statement-Main.xlsx",
+      "type": "back"
+    },
+    {
+      "name": "export-statement",
+      "rows": 0,
+      "filePath": "D:\\optitax\\optitax\\data\\jobs\\f9cbef47-4a92-4e15-8eca-ed5bb3a3d69f\\outputs\\export-statement.xlsx",
+      "type": "back"
+    },
+    {
+      "name": "Main Backworking Sheets",
+      "rows": 0,
+      "filePath": "D:\\optitax\\optitax\\data\\jobs\\f9cbef47-4a92-4e15-8eca-ed5bb3a3d69f\\outputs\\Main Backworking Sheets.xlsx",
+      "type": "back"
+    },
+    {
+      "name": "Main DBK Working Sheet",
+      "rows": 0,
+      "filePath": "D:\\optitax\\optitax\\data\\jobs\\f9cbef47-4a92-4e15-8eca-ed5bb3a3d69f\\outputs\\Main DBK Working Sheet.xlsx",
+      "type": "main"
+    }
+  ],
+  "validations": [
+    {
+      "group": "Output files",
+      "label": "Main DBK report produced",
+      "status": "pass",
+      "value": "2 file(s)"
+    },
+    {
+      "group": "Pipeline",
+      "label": "Script completed without errors",
+      "status": "pass",
+      "value": "OK"
+    }
+  ],
+  "completedAt": "2026-06-05T07:06:04.983509"
+}

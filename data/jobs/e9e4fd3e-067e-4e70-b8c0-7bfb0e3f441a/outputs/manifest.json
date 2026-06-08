@@ -1,0 +1,55 @@
+{
+  "outputs": [
+    {
+      "name": "Backworking Sheets",
+      "rows": 0,
+      "filePath": "D:\\optitax\\optitax\\data\\jobs\\e9e4fd3e-067e-4e70-b8c0-7bfb0e3f441a\\outputs\\Backworking Sheets.xlsx",
+      "type": "back"
+    },
+    {
+      "name": "bom-working-file",
+      "rows": 0,
+      "filePath": "D:\\optitax\\optitax\\data\\jobs\\e9e4fd3e-067e-4e70-b8c0-7bfb0e3f441a\\outputs\\bom-working-file.xlsx",
+      "type": "back"
+    },
+    {
+      "name": "Data for DBK",
+      "rows": 0,
+      "filePath": "D:\\optitax\\optitax\\data\\jobs\\e9e4fd3e-067e-4e70-b8c0-7bfb0e3f441a\\outputs\\Data for DBK.xlsx",
+      "type": "back"
+    },
+    {
+      "name": "DBK Working Sheet",
+      "rows": 0,
+      "filePath": "D:\\optitax\\optitax\\data\\jobs\\e9e4fd3e-067e-4e70-b8c0-7bfb0e3f441a\\outputs\\DBK Working Sheet.xlsx",
+      "type": "main"
+    },
+    {
+      "name": "export-statement",
+      "rows": 0,
+      "filePath": "D:\\optitax\\optitax\\data\\jobs\\e9e4fd3e-067e-4e70-b8c0-7bfb0e3f441a\\outputs\\export-statement.xlsx",
+      "type": "back"
+    }
+  ],
+  "validations": [
+    {
+      "group": "Output files",
+      "label": "DBK Working Sheet produced",
+      "status": "pass",
+      "value": "Found"
+    },
+    {
+      "group": "Output files",
+      "label": "Backworking Sheets produced",
+      "status": "pass",
+      "value": "Found"
+    },
+    {
+      "group": "Pipeline",
+      "label": "Script completed without errors",
+      "status": "pass",
+      "value": "OK"
+    }
+  ],
+  "completedAt": "2026-06-05T07:50:04.427025"
+}
