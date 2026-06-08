@@ -1,27 +1,36 @@
-import { validateEnv } from "./validateEnv";
-validateEnv();
-
 import mongoose from "mongoose";
 
-const MONGODB_URI = process.env.MONGODB_URI!;
+const MONGODB_URI = process.env.MONGODB_URI;
 
 if (!MONGODB_URI) {
-  throw new Error("Please define MONGODB_URI in your .env.local file");
+  throw new Error("Please define MONGODB_URI");
 }
 
-// Cache connection across hot-reloads in dev
 const g = globalThis as typeof globalThis & {
-  _mongoConn?: { conn: typeof mongoose | null; promise: Promise<typeof mongoose> | null };
+  _mongoConn?: {
+    conn: typeof mongoose | null;
+    promise: Promise<typeof mongoose> | null;
+  };
 };
 
-if (!g._mongoConn) g._mongoConn = { conn: null, promise: null };
+if (!g._mongoConn) {
+  g._mongoConn = {
+    conn: null,
+    promise: null,
+  };
+}
+
 const cache = g._mongoConn;
 
 export default async function connectDB() {
+  if (!process.env.MONGODB_URI) {
+    throw new Error("MONGODB_URI is not configured");
+  }
+
   if (cache.conn) return cache.conn;
 
   if (!cache.promise) {
-    cache.promise = mongoose.connect(MONGODB_URI, {
+    cache.promise = mongoose.connect(process.env.MONGODB_URI, {
       bufferCommands: false,
     });
   }
