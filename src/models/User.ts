@@ -64,6 +64,7 @@ const UserSchema = new mongoose.Schema(
     // ── Employee fields ────────────────────────────────────────────
     employeeId:      { type: String, trim: true },
     department:      { type: String, trim: true },
+    isFinance:       { type: Boolean, default: false }, // can approve reimbursements
     designation:     { type: String, trim: true },
     specializations: [{ type: String }],
     joiningDate:     { type: String, trim: true },
@@ -77,9 +78,6 @@ const UserSchema = new mongoose.Schema(
     onboardingCompleted: { type: Boolean, default: false },
 
     // ── Subscription ───────────────────────────────────────────────
-    photo:                 { type: String, trim: true },
-    twoFactorSecret:       { type: String },
-    twoFactorEnabled:      { type: Boolean, default: false },
     subscription:          { type: String, default: "free" },
     subscriptionPaymentId: { type: String, trim: true },
     subscriptionOrderId:   { type: String, trim: true },
