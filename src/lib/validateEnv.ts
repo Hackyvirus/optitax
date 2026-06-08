@@ -13,29 +13,26 @@ const RECOMMENDED = [
 ];
 
 export function validateEnv() {
-  // Skip validation during build
-  if (process.env.NEXT_PHASE === "phase-production-build") {
-    return;
-  }
-
-  const missing = REQUIRED.filter(key => !process.env[key]);
+  const missing = REQUIRED.filter((key) => !process.env[key]);
 
   if (missing.length > 0) {
-    throw new Error(
-      `\n\n❌ Missing required environment variables:\n${missing
-        .map(k => `  - ${k}`)
+    console.error(
+      `\n❌ Missing required environment variables:\n${missing
+        .map((k) => `  - ${k}`)
         .join("\n")}\n`
     );
+
+    process.exit(1);
   }
 
   const missingRecommended = RECOMMENDED.filter(
-    key => !process.env[key]
+    (key) => !process.env[key]
   );
 
   if (missingRecommended.length > 0) {
     console.warn(
       `\n⚠ Missing recommended environment variables:\n${missingRecommended
-        .map(k => `  - ${k}`)
+        .map((k) => `  - ${k}`)
         .join("\n")}\n`
     );
   }

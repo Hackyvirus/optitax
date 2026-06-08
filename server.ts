@@ -3,6 +3,9 @@ import { parse } from "url";
 import next from "next";
 import { Server } from "socket.io";
 import jwt from "jsonwebtoken";
+import { validateEnv } from "./src/lib/validateEnv";
+
+validateEnv();
 
 const dev = process.env.NODE_ENV !== "production";
 const port = parseInt(process.env.PORT || "3000", 10);
